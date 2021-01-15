@@ -16,8 +16,10 @@ fnames_filename = "fnames.txt"
 lnames_filename = "lnames.txt"
 states_filename = "states.txt" # i might add countries too idk
 domains_filename = "domains.txt"
-messagesfolder = "messages" # the first line of every message is the subject
-messages = os.listdir(messagesfolder)
+messages = []
+for subdir, dirs, files in os.walk("messages/"):
+    for file in files:
+        messages.append(os.path.join(subdir, file))
 
 # Return a randomly selected line from the given file.
 def read_random_line(file):
@@ -100,7 +102,7 @@ def submit():
 
     # Select a random message to send.
     index = random.randrange(0, len(messages))
-    with open(messagesfolder + "/" + messages[index]) as messagefile:
+    with open(messages[index]) as messagefile:
         # Read the message file.
         lines = messagefile.readlines()
         subject_box.send_keys(lines[0])
