@@ -20,7 +20,6 @@ messages = []
 for subdir, dirs, files in os.walk("messages/"):
     for file in files:
         messages.append(os.path.join(subdir, file))
-        print(os.path.join(subdir, file))
 
 # Return a randomly selected line from the given file.
 def read_random_line(file):
