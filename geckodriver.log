@@ -87,3 +87,66 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1610682392243	Marionette	INFO	Listening on port 42087
 1610682392268	Marionette	WARN	TLS certificate errors will be ignored for this session
 1610682394556	Marionette	INFO	Stopped listening on port 42087
+1610696345798	geckodriver	INFO	Listening on 127.0.0.1:56460
+1610696345817	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWi0yMh"
+Error: no DISPLAY environment variable specified
+1610696351775	geckodriver	INFO	Listening on 127.0.0.1:56480
+1610696351787	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4sjMxU"
+Error: no DISPLAY environment variable specified
+1610696356264	geckodriver	INFO	Listening on 127.0.0.1:56490
+1610696356294	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEPlRVb"
+Error: no DISPLAY environment variable specified
+1610696451845	geckodriver	INFO	Listening on 127.0.0.1:56548
+1610696451877	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexrysdj"
+*** You are running in headless mode.
+1610696531150	geckodriver	INFO	Listening on 127.0.0.1:56783
+1610696531183	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFwo94K"
+*** You are running in headless mode.
+
+(firefox:750): dconf-CRITICAL **: 02:42:12.319: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:750): dconf-CRITICAL **: 02:42:12.320: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:750): dconf-CRITICAL **: 02:42:12.321: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:750): dconf-CRITICAL **: 02:42:12.321: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:750): dconf-CRITICAL **: 02:42:12.323: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:750): dconf-CRITICAL **: 02:42:12.323: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:750): dconf-CRITICAL **: 02:42:12.328: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+1610696554543	geckodriver	INFO	Listening on 127.0.0.1:56834
+1610696554555	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemBLPs0"
+*** You are running in headless mode.
+
+(firefox:800): dconf-CRITICAL **: 02:42:35.632: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:800): dconf-CRITICAL **: 02:42:35.632: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:800): dconf-CRITICAL **: 02:42:35.633: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:800): dconf-CRITICAL **: 02:42:35.633: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:800): dconf-CRITICAL **: 02:42:35.633: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:800): dconf-CRITICAL **: 02:42:35.634: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:800): dconf-CRITICAL **: 02:42:35.634: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+1610696764638	geckodriver	INFO	Listening on 127.0.0.1:60527
+1610696764651	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezHSRYF"
+*** You are running in headless mode.
+
+(firefox:849): dconf-CRITICAL **: 02:46:05.730: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:849): dconf-CRITICAL **: 02:46:05.731: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:849): dconf-CRITICAL **: 02:46:05.731: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:849): dconf-CRITICAL **: 02:46:05.731: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:849): dconf-CRITICAL **: 02:46:05.732: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:849): dconf-CRITICAL **: 02:46:05.732: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.
+
+(firefox:849): dconf-CRITICAL **: 02:46:05.732: unable to create directory '/home/eric/.cache/dconf': Permission denied.  dconf will not work properly.

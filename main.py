@@ -5,7 +5,11 @@ import sys
 import random
 import time
 
-driver = webdriver.Firefox()
+print("Initializing browser...")
+driver_options = webdriver.FirefoxOptions()
+driver_options.add_argument("--headless")
+driver = webdriver.Firefox(firefox_options=driver_options)
+print("Initialized.")
 
 fnames_filename = "fnames.txt"
 lnames_filename = "lnames.txt"
@@ -91,13 +95,18 @@ def submit():
             message_box.send_keys(line)
     submit_button.click()
 
-if __name__ == "__main__":
+def main():
     try:
+        print("String script...")
         submit()
         driver.close()
     except KeyboardInterrupt:
-        print("Exiting")
+        print("Script cancelled, cleaning up...")
         try:
+            driver.close()
             sys.exit(0)
         except SystemExit:
             os._exit(0)
+
+if __name__ == "__main__":
+    main()
