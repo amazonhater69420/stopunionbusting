@@ -6,16 +6,20 @@ you'll need Selenium WebDriver, Firefox, and GeckoDriver to run this (i know thi
 on Linux:
 
 Ubuntu
-    sudo apt install python-pip
-    sudo pip install selenium
-    wget https://github.com/mozilla/geckodriver/releases/download/v0.29.0/geckodriver-linux64.tar.gz
-    tar -xzf geckodriver\*.tar.gz
-    chmod +x geckodriver
-    sudo mv geckodriver /usr/local/bin
+```
+sudo apt install python-pip
+sudo pip install selenium
+wget https://github.com/mozilla/geckodriver/releases/download/v0.29.0/geckodriver-linux64.tar.gz
+tar -xzf geckodriver\*.tar.gz
+chmod +x geckodriver
+sudo mv geckodriver /usr/local/bin
+```
 
 Arch
-    sudo pacman -S python-selenium geckodriver
-    <your AUR installation command here> selenium-server-standalone
+```
+sudo pacman -S python-selenium geckodriver
+<your AUR installation command here> selenium-server-standalone
+```
 
 NOTE:
 if you run this a bunch it seems like their DDOS or whatever protection will block you
