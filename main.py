@@ -1,5 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import argparse
 import os
 import sys
@@ -78,17 +81,18 @@ def submit():
     # Fill out the form.
 
     # Locate and clear out existing values in form fields.
-    fname_box = driver.find_element_by_name("fname")
+    fname_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "fname")))
     fname_box.clear()
-    lname_box = driver.find_element_by_name("lname")
+    lname_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "fname")))
     lname_box.clear()
-    email_box = driver.find_element_by_name("email")
+    email_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, "fname")))
     email_box.clear()
-    subject_box = driver.find_element_by_xpath("/html/body/div[4]/div[2]/div/main/section/div/div/div[2]/div[1]/div[1]/div[3]/div/div/div/form/div[1]/div[2]/input") # this will likely change if they ever update the page
+    subject_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div/main/section/div/div/div[2]/div[1]/div[1]/div[3]/div/div/div/form/div[1]/div[2]/input"))) # this will likely change if they ever update the page
     subject_box.clear()
-    message_box = driver.find_element_by_xpath("/html/body/div[4]/div[2]/div/main/section/div/div/div[2]/div[1]/div[1]/div[3]/div/div/div/form/div[1]/div[3]/textarea")
+    message_box = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div/main/section/div/div/div[2]/div[1]/div[1]/div[3]/div/div/div/form/div[1]/div[3]/textarea")))
     message_box.clear()
-    submit_button = driver.find_element_by_xpath("/html/body/div[4]/div[2]/div/main/section/div/div/div[2]/div[1]/div[1]/div[3]/div/div/div/form/div[2]/input")
+    submit_button = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[4]/div[2]/div/main/section/div/div/div[2]/div[1]/div[1]/div[3]/div/div/div/form/div[3]/input")))
+    
 
     # Generate random names and emails.
     fname = read_random_line(open(fnames_filename))
